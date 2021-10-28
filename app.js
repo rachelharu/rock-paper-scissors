@@ -7,13 +7,13 @@ function computerPlay() {
 
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === 'rock' && computerSelection === 'paper'){
+    if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper'){
         console.log('paper beat rock')
     }
-     else if (playerSelection === 'rock' && computerSelection === 'rock'){
+     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock'){
          console.log('its a tie, try again!')
     }
-     else if (playerSelection === 'rock' && computerSelection === 'scissors') {
+     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') {
         console.log('rock beats scissors')
     }
     else {
@@ -22,6 +22,6 @@ function playRound(playerSelection, computerSelection) {
 };
 
 
-const playerSelection = "rock";
+const playerSelection = "Rock";
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
