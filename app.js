@@ -38,10 +38,13 @@ function playRound(playerSelection, computerSelection) {
     case playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock':
     case playerSelection.toLowerCase() === 'scissors' && computerSelection === 'paper':
       return 'win'
+      alert("win!")
     case playerSelection.toLowerCase() === computerSelection:
       return `It's a tie!`
+      alert("It's a tie!")
     default:
       return 'lose'
+      alert("lose!")
   }
 }
 
@@ -53,7 +56,7 @@ function game() {
   console.log(result)
   updateScore(result)
   if (playerScore >= 5 || computerScore >= 5) {
-    alert('game over')
+    alert('game over you ' + result)
   }
 }
 
