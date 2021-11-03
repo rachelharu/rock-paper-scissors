@@ -17,21 +17,6 @@ const computerSelection = computerPlay()
 
 //function that compares playerSelection and computerSelection to choose a winner
 
-// function playRound(playerSelection, computerSelection) {
-//   if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
-//     console.log('paper beat rock')
-//     return ('you lose!')
-//   } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock') {
-//     console.log('its a tie, try again!')
-//     return ('its a tie, try again!')
-//   } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') {
-//     console.log('rock beats scissors')
-//     return ('you win!')
-//   } else {
-//     console.log('wut')
-//   }
-// }
-
 function playRound(playerSelection, computerSelection) {
   switch (true) {
     case playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors':
